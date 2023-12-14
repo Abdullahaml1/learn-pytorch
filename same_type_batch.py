@@ -127,3 +127,23 @@ if __name__ == "__main__":
 
     for batch in dataloader:
         print(batch)
+
+    """
+    Code output:
+    Data:
+    {'val': 9, 'type': 'neg'}
+    {'val': 4, 'type': 'neg'}
+    {'val': 7, 'type': 'neg'}
+    {'val': 9, 'type': 'neg'}
+    {'val': 1, 'type': 'pos'}
+    {'val': 7, 'type': 'neg'}
+    {'val': 1, 'type': 'neg'}
+    {'val': 7, 'type': 'pos'}
+    {'val': 0, 'type': 'pos'}
+    {'val': 5, 'type': 'neg'}
+    ------------
+    Batches:
+    {'val': tensor([9, 4, 7, 9]), 'type': ['neg', 'neg', 'neg', 'neg']}
+    {'val': tensor([7, 1, 5]), 'type': ['neg', 'neg', 'neg']}
+    {'val': tensor([1, 7, 0]), 'type': ['pos', 'pos', 'pos']}
+"""
